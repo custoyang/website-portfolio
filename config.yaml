@@ -40,7 +40,7 @@ params:
 
     sidebar:
         emoji:
-        subtitle: Welcome! Here you can find my blog where I document my projects, interests, and learning journey.
+        subtitle: Welcome to my personal website! Here I'll share my thoughts, projects, and experiences with you.
         avatar:
             enabled: true
             local: true
