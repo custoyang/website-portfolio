@@ -27,6 +27,27 @@ I was able to meet so many amazing people from different majors, including softw
 * Thank you to everybody that organized the event!
 
 ### Developing the Model
+The idea of developing the model came from the examples provided by AWS for reward functions for DeepRacer. By combining and modifying functions, I tried to explore the performance of the model.
 
-...
+**Model #1:**
+
+- **Agent Configuration:**
+
+The agent used for this model has a continuous action space with a steering angle of 30 degrees. The minimum and maximum speeds are set to 0.5 m/s and 4 m/s, respectively.  
+
+- **Hyperparameters:**
+
+The reinforcement learning algorithm used in this example model is PPO. We have tuned the hyperparameters in a different way than the default one. It helped us explore the result for changes in each hyperparameter. The batch size was changed to 128 to get a more smooth and stable update to the neural network.
+We have kept the default value for the entropy and reduced the discount factor. We have used Huber as a loss-type since it is more subtle. We have kept the other parameters the same as default except for the learning rate. Since we have increased the batch size, the learning time has also increased. So, We increased the learning rate to shorten the learning time. The Training configuration used in the example is shown below.
+
+![](hyperparameter1.png)
+
+- **Reward Function:**
+
+**Step 1: Distance from the centre**
+
+The reward function utilizes five markers to evaluate the agent's distance from the center. The reward amount varies based on how close the agent is to the center; proximity to the center yields a higher reward. These five markers not only incentivize the agent to collect reward points but also provide multiple options to complete the track more quickly.
+
+![](reward_function.png)
+
 
