@@ -1,7 +1,7 @@
 ---
 author : "Custo Yang"
 title : "AWS Deepracer"
-date : "2024-03-10"
+date : "2024-04-27"
 description : "Winning 2nd place at AWS Deepracer x AI @ UCI " 
 tags : [
     "AWS",
